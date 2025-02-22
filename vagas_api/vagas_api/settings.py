@@ -87,12 +87,8 @@ WSGI_APPLICATION = 'vagas_api.wsgi.application'
 
 DATABASES = {
     'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'postgresql://dbvagas_user:VxcVAJyb0V3iDu25P61t6S6YTl2k5y2z@dpg-cut407dsvqrc73e42u6g-a/dbvagas',
-            'USER': 'dbvagas_user',
-            'PASSWORD': 'VxcVAJyb0V3iDu25P61t6S6YTl2k5y2z',
-            'HOST': 'dpg-cut407dsvqrc73e42u6g-a',
-            'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
