@@ -1,0 +1,1 @@
+web: gunicorn cadastro-vagas-de-empresa.wsgi:application
