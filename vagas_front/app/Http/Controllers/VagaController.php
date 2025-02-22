@@ -37,7 +37,6 @@ class VagaController extends Controller
             'salario' => $request->salario,
         ]);
 
-        // Redirecionar para a página inicial com mensagem de sucesso
         if ($response->successful()) {
             return redirect('/')->with('success', 'Vaga cadastrada com sucesso!');
         } else {
