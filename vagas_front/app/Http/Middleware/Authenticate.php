@@ -20,4 +20,8 @@ class Authenticate
     
         return $next($request);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of 4b99b0f (Revert "pog")
