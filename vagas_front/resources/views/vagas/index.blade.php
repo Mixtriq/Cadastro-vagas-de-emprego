@@ -98,10 +98,6 @@
 
         @if(Auth::check())
             <p>Bem-vindo, <strong>{{ Auth::user()->name }}</strong>!</p>
-            <form action="{{ route('logout') }}" method="POST" class="logout-form">
-                @csrf
-                <button type="submit" class="logout-button">Sair</button>
-            </form>
         @else
             <p>Você não está logado.</p>
         @endif
