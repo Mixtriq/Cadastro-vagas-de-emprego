@@ -87,7 +87,6 @@
 </head>
 <body>
     <div class="container">
-        <h1>Lista de Vagas de Emprego</h1>
 
         @if(session('success'))
             <p class="success">{{ session('success') }}</p>
@@ -98,9 +97,12 @@
 
         @if(Auth::check())
             <p>Bem-vindo, <strong>{{ Auth::user()->name }}</strong>!</p>
+
         @else
             <p>Você não está logado.</p>
         @endif
+
+        <h1>Lista de Vagas de Emprego</h1>
 
         <h2>Cadastrar Nova Vaga</h2>
         <form action="/vagas" method="POST">
@@ -111,7 +113,7 @@
             <label for="empresa">Empresa:</label>
             <input type="text" name="empresa" required>
 
-            <label for="descricao">Descrição:</label>
+            <label for="descricao">Contato:</label>
             <textarea name="descricao" required></textarea>
 
             <label for="salario">Salário:</label>
@@ -124,7 +126,7 @@
             <tr>
                 <th>Título</th>
                 <th>Empresa</th>
-                <th>Descrição</th>
+                <th>Contato</th>
                 <th>Salário</th>
                 <th>Data de Publicação</th>
             </tr>
