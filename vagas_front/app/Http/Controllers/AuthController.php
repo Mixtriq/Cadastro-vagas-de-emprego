@@ -27,12 +27,4 @@ public function store(Request $request)
     } else {
         return back()->withErrors(['email' => 'Credenciais inválidas']);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> parent of 4b99b0f (Revert "pog")
-=======
-}
->>>>>>> parent of 4b99b0f (Revert "pog")
